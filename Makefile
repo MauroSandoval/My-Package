@@ -11,7 +11,7 @@ uninstall:
 	@pip uninstall -y toto
 
 test:
-	@coverage run -m pytest tests/*.py
+	@coverage run -m pytest 
 	@coverage report -m --omit=$(VIRTUAL_ENV)/lib/python*
 
 clean:
